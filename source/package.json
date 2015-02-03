@@ -1,0 +1,16 @@
+{
+  "name": "RiteshBlogTheme",
+  "version": "0.0.1",
+  "description": "",
+  "main": "css/index.scss",
+  "scripts": {},
+  "author": "Ritesh Manchanda <me@ritesh.it>",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.0.0",
+    "time-grunt": "^1.0.0"
+  }
+}

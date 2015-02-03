@@ -1,0 +1,44 @@
+// Core variables and mixins
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+
+// Core CSS
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+
+// Utility classes
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+@import '../../../../../../../patterns/source/styles/patterns';
+
+html, body {
+  background-color: #FAFAFA;
+}
+
+body {
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+}
+
+
+/* home post section */
+header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+
+  h1 {
+    text-transform: none;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .user-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* single post */

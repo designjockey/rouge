@@ -1,0 +1,21 @@
+{
+  "name": "ritesh blog theme",
+  "version": "0.0.1",
+  "authors": [
+    "Ritesh Manchanda <me@ritesh.it>"
+  ],
+  "description": "Ghost Theme for Ritesh's Blog",
+  "main": "css/index.scss",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.3.3"
+  }
+}
