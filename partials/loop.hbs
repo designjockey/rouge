@@ -1,13 +1,6 @@
-{{! Previous/next page links - only displayed on page 2+ }}
-<!--
-<div class="extra-pagination inner">
-    {{pagination}}
-</div>
--->
-
 {{! This is the post loop - each post will be output using this markup }}
 <div class="row">
-	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8">
+	<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
 		{{#foreach posts}}
 		  <section class="blog-post-section {{post_class}}">
 			<div class="blog-post">
@@ -26,8 +19,8 @@
 			</div>
 		  </section>
 		{{/foreach}}
+
+		{{! Previous/next page links - displayed on every page }}
+	 	<div class="text-center">{{pagination}}</div>
 	</div>
 </div>
-
-{{! Previous/next page links - displayed on every page }}
-<!--{{pagination}}-->
