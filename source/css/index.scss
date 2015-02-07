@@ -45,9 +45,11 @@ header {
 
 .header-secondary {
   .user-logo {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    margin: 20px auto;
   }
+}
+
+p img {
+  max-width: 100%;
 }
 
