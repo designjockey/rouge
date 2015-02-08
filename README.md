@@ -1,0 +1,2 @@
+# rm
+Ghost Blog Theme
