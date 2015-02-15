@@ -32,6 +32,10 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
   text-transform: none;
+  margin: {
+    top: 30px;
+    bottom:20px;
+  }
 }
 
 /* home post section */
@@ -76,4 +80,19 @@ p img {
 .pagination {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+blockquote {
+  border-left: 5px solid lighten($primary, 30%);
+  padding-left: 20px;
+
+  &, p {
+    text-transform: uppercase;
+  }
+}
+
+pre[class*='language-'] {
+  &, > code[data-language]:before {
+    border-radius: 0;
+  }
 }

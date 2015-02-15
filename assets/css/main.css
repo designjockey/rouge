@@ -1889,6 +1889,12 @@ p {
   text-transform: none;
 }
 
+blockquote p {
+  font-family: "Oxygen";
+  font-style: italic;
+  color: #d03c41;
+}
+
 /* helpers */
 .text-center {
   text-align: center;
@@ -2200,11 +2206,11 @@ category: Content Components - User Avatar
 
 .user-avatar,
 .user-avatar > img {
-  -moz-border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
-  border-radius: 120px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
   width: 120px;
   height: 120px;
 }
@@ -2235,11 +2241,11 @@ category: Content Components - User Logo
 ```
 */
 .user-logo {
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   -webkit-touch-callout: none;
@@ -2395,6 +2401,72 @@ category: Content Components - Post Section
 }
 .blog-post-section .blog-post .blog-post-title a:hover {
   color: #C32F34;
+}
+
+/* theme configurations */
+/* theme configurations */
+/* theme configurations */
+/* animations and transitions */
+/* typography */
+/* .user-avatar */
+/*doc
+---
+title: Shape Shifter
+name: shape-shifter
+category: Content Components - Shape Shifter
+---
+
+```html_example
+<div class="shape-shifter-circle">
+  <div class="shape-shifter-close-content">
+    Click
+  </div>
+  <div class="shape-shifter-open-content">
+    Lots of content here
+  </div>
+</div>
+```
+*/
+.shape-shifter-circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  -ms-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  background-color: #C32F34;
+}
+.shape-shifter-circle .shape-shifter-close-content {
+  opacity: 1;
+}
+.shape-shifter-circle .shape-shifter-open-content {
+  opacity: 0;
+}
+.shape-shifter-circle.open {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+.shape-shifter-circle.open .shape-shifter-close-content {
+  opacity: 0;
+}
+.shape-shifter-circle.open .shape-shifter-open-content {
+  opacity: 1;
 }
 
 /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+css-extras+clike+javascript+php+scss+bash+ruby+handlebars+jade+markdown&plugins=line-numbers+show-language */
@@ -2596,6 +2668,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* home post section */
@@ -2634,6 +2708,18 @@ p img {
 .pagination {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+blockquote {
+  border-left: 5px solid #e9a2a5;
+  padding-left: 20px;
+}
+blockquote, blockquote p {
+  text-transform: uppercase;
+}
+
+pre[class*='language-'], pre[class*='language-'] > code[data-language]:before {
+  border-radius: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
