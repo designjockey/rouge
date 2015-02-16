@@ -1,11 +1,12 @@
-# RM theme for Ghost
-
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
-
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
-
-## Copyright & License
-
-Copyright (c) 2013-2014 Ritesh Manchanda.
-
+# Rouge theme for Ghost
 =======
+
+##Development
+===
+
+The development source is inside /source folder and development can be started by using the steps below:
+
+1. Create a dev installation of Ghost blog
+1. Clone repo to /content/themes/ folder in Ghost
+1. Run `npm install` inside /source
+1. Run `grunt develop` to start the dev server along with the watchers

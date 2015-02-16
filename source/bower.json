@@ -1,10 +1,10 @@
 {
-  "name": "ritesh blog theme",
+  "name": "Rouge Ghost Theme",
   "version": "0.0.1",
   "authors": [
     "Ritesh Manchanda <me@ritesh.it>"
   ],
-  "description": "Ghost Theme for Ritesh's Blog",
+  "description": "Rouge",
   "main": "css/index.scss",
   "license": "MIT",
   "private": true,
@@ -17,8 +17,5 @@
   ],
   "devDependencies": {
     "bootstrap-sass-official": "~3.3.3"
-  },
-  "dependencies": {
-    "font-awesome": "~4.3.0"
   }
 }
