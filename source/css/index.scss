@@ -16,6 +16,7 @@
 @import 'vendor/prism';
 
 html, body {
+  min-height: 100vh;
   background-color: #FAFAFA;
 }
 
@@ -96,3 +97,69 @@ pre[class*='language-'] {
     border-radius: 0;
   }
 }
+
+/*pagination*/
+.pagination {
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.older-posts, .newer-posts {
+  position: absolute;
+  display: inline-block;
+}
+
+.older-posts {
+  right: 0
+}
+
+.page-number {
+  display: inline-block;
+}
+
+.newer-posts {
+  left: 0
+}
+
+/* font awesome icons */
+$fa-font-size-base:   14px !default;
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts" !default; // for referencing Bootstrap CDN font files directly
+$fa-css-prefix:       fa !default;
+$fa-version:          "4.3.0" !default;
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+  url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+  url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+  url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+  url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+  //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.#{$fa-css-prefix} {
+  display: inline-block;
+  font: normal normal normal #{$fa-font-size-base}/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); // ensures no half-pixel rendering in firefox
+
+}
+
+$fa-var-chevron-circle-down: "\f13a";
+$fa-var-chevron-circle-left: "\f137";
+$fa-var-chevron-circle-right: "\f138";
+$fa-var-chevron-circle-up: "\f139";
+
+.#{$fa-css-prefix}-chevron-circle-left:before { content: $fa-var-chevron-circle-left; }
+.#{$fa-css-prefix}-chevron-circle-right:before { content: $fa-var-chevron-circle-right; }
+.#{$fa-css-prefix}-chevron-circle-up:before { content: $fa-var-chevron-circle-up; }
+.#{$fa-css-prefix}-chevron-circle-down:before { content: $fa-var-chevron-circle-down; }
