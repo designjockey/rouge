@@ -1,8 +1,6 @@
 # Rouge theme for Ghost
-=======
 
 ##Development
-===
 
 The development source is inside /source folder and development can be started by using the steps below:
 
