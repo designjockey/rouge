@@ -16,6 +16,7 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass-official": "~3.3.3"
+    "bootstrap-sass-official": "~3.3.3",
+    "patterns" : "git@github.com:designjockey/patterns.git"
   }
 }
